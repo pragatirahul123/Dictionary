@@ -1,0 +1,15 @@
+a={"a":100,"b":200,"c":300}
+b={"a":300,"b":200,"d":400}
+c={}
+for index in a: 
+    for jar in b:
+        if (index==jar):
+            c[index]=a[index]+a[jar]
+            break
+            
+    else:
+        c[index]=a[index]
+        c[jar]=b[jar]
+print(c)
+
+
